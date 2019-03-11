@@ -150,21 +150,33 @@
           <div class="callme-content">
             <div class="content-ifm">
               <h1>联系方式</h1>
-              <span>Family Inn</span>
-              <p>安徽省合肥市蜀山区莲花路1688号</p>
-              <p>家庭客栈管理系统</p>
-              <p>TEL：18655634313</p>
-              <p>QQ：1623255469</p>
+              <span style="fontWeight:700">Family Inn</span>
+              <p>
+                安徽省合肥市蜀山区莲花路1688号<br>
+                <span>家庭客栈管理系统</span>
+              </p>
+              <p>
+                TEL：18655634313 <br>
+                <span>QQ：1623255469</span>
+              </p>
             </div>
             <div class="content-edit">
-              <a-textarea placeholder="反馈内容" :rows="4"/>
+              <a-textarea placeholder="反馈内容" :rows="8"/>
               <a-button type="primary">反馈意见</a-button>
             </div>
           </div>
         </div>
       </a-layout-content>
       <a-layout-footer>
-        <p>帮助 </p>
+        <span>帮助</span>
+        <a-divider type="vertical"></a-divider>
+        <span>反馈意见</span>
+        <a-divider type="vertical"></a-divider>
+        <span>投诉举报</span>
+        <a-divider type="vertical"></a-divider>
+        <span>知道协议</span><br>
+        <span>版权所有：合师软工江</span>
+
       </a-layout-footer>
     </a-layout>
   </div>
@@ -476,6 +488,24 @@ import $ from 'jquery';
           height: 50%;
           margin: 0 auto;
           background-color: rgb(13, 115, 155);
+          color:#000;
+          .content-ifm {
+            width: 30%;
+            float: left;
+            margin-top: 10%;
+            margin-left: 10%;
+            text-align: left;
+          }
+          .content-edit {
+            width: 50%;
+            float: right;
+            margin-top: 10%;
+            margin-right: 10%;
+            text-align: left;
+            button {
+              margin-top: 10px;
+            }
+          }
         }
 
       }
